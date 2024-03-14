@@ -1,0 +1,26 @@
+Write a python code to compute the dissociation curve for the H2 molecule with the VQE algorithm.
+The attached code is for a fixed H-H distance, you will have to modify it to sample many distances in the range between 0.1 Å and 3.9 Å, with spacing 0.1 Å.
+You can run VQE either on your computer (you need to have Qiskit installed) or on the IBM Quantum Lab using a simulator.
+
+
+
+(1) Execute the program for the H2 molecule using the pySCF driver, the JW mapping and the STO-3G basis set.
+Report the values of the ground-state VQE energy as a function of distance in a table and in a plot.
+In the report, specify if you have run on the IBM Quantum Lab or locally.
+
+
+(2) Calculate the same dissociation curve by HF-STO3G, HF-ccpVDZ and CISD-ccpVDZ using PSI4 or pySCF.
+
+
+Report in the same plot, using different symbols for different sets of data, the curves obtained with VQE-STO-3G, HF-STO-3G, HF-ccpVDZ, CISD-ccpVDZ.
+Comment on the performance of VQE with respect to the classical methods. Specifically:
+ (a) indicate how VQE performs, against the other methods, for the minimum-energy distance;
+ (b) indicate how VQE performs, against the other methods, for the minimum energy;
+ (c) indicate how VQE performs, against the other methods, for the asymptotic energy.
+ It is convenient to report these three values obtained with each method in a table and then comment on the comparison of the tabulated values.
+
+
+Here are the instructions. If you can also do the following, I can give a bonus:
+
+Execute problem on an IBM QuantumLab qubit device, with and without error mitigation, 
+and report the obtained dissociation curve in a single plot with all the other curves obtained in the solution of the previous problem.
