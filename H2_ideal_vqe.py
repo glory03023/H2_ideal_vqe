@@ -15,9 +15,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # Define the H-H distances to sample
-distances = np.arange(0.1, 1.0, 0.1)
+distances = np.arange(0.1, 4.0, 0.1)
 molecule = 'H .0 .0 -{0}; H .0 .0 {0}'
-basisNames = ["sto3g", "ccpvdz", "augccpvdz"]
+basisNames = ["sto3g", "321g"]
 
 # Initialize arrays to store distances and energies
 dissociation_curve = []
